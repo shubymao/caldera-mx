@@ -1,10 +1,10 @@
 units:
-  px: cx + 2
-  py: cy + 2
+  px: u + 2
+  py: u + 2
 
 
-  pushX: (cx / 2)
-  pushY: (cy / 2)
+  pushX: (u / 2)
+  pushY: (u / 2)
 
   padX: pushX + 2
   padY: pushY + 2
@@ -21,8 +21,8 @@ units:
   screwPCBRadius: 4.0
 points:
   key:
-    padding: cy + spacing
-    spread: cx + spacing
+    padding: u + spacing
+    spread: u + spacing
   zones:
     matrix:
       columns:
@@ -246,8 +246,8 @@ pcbs:
       main:
         outline: board_left
     footprints:
-      choc_hotswap:
-        what: choc
+      mx_hotswap:
+        what: mx
         where: /^matrix_.*/
         params:
           keycaps: true
@@ -392,8 +392,8 @@ pcbs:
       main:
         outline: board_right
     footprints:
-      choc_hotswap:
-        what: choc
+      mx_hotswap:
+        what: mx
         where: /^mirror_matrix_.*/
         params:
           keycaps: true
@@ -508,7 +508,7 @@ pcbs:
             ref: mirror_matrix_fourth_num
             shift: [8.7, 5.5]
         params: &textParams
-            text: Caldera
+            text: Shuby MX
             justify: left
             h_size: 3.0
             v_size: 3.0
